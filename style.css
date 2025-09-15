@@ -521,8 +521,6 @@ body{
     width: 20vw;
     display: flex;
     align-items: center;
-    position: absolute;
-    right: 0;
     font-size: 20px;
     height: 36px;
     font-size: 30px;
@@ -774,4 +772,5 @@ body{
         padding-top: 10vh;
         display: block;
     }
+
 }
