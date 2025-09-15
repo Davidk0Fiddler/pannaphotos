@@ -1,0 +1,777 @@
+@font-face {
+  font-family: Inter;
+  src: url(Inter.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* body {
+    background-color: red;
+} */
+
+body{
+    overflow: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.navigation-section {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35vw;
+    margin-top: 5vh;
+}
+
+.Company-name {
+    float: left;
+    display: block;
+    width: 15vw;
+    font-size: 30px;
+    font-weight: 1000;
+    font-family: Inter;
+    font-style: italic;
+    text-align: center;
+
+}
+
+.navigation-items {
+    width: 40vw;
+    height: 80%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-item {
+    width: 7.5vw;
+    padding: 2.5vw;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item:hover{
+    cursor: pointer;
+}
+
+#kapcsolat-btn {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 10vw;
+}
+
+
+.hero-section {
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-texts{
+    font-family: Inter;
+}
+
+#heroh1 {
+    
+    display: none;
+}
+
+.hero-texts>h1{
+    margin-top: 20vh;
+    font-family: Inter;
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.hero-texts>p {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 200;
+    margin-top: 15px;
+}
+
+.hero-texts>button{
+    height: 75px;
+    width: 250px;
+    font-size: 25px;
+
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+
+    margin-top: 25px;
+}
+
+.hero-texts>button:hover {
+    cursor: pointer;
+}
+
+.hero-image{
+    width: 40vw;
+    gap: 5vw;
+
+    display: flex;
+    align-items: center;
+    
+}
+
+.hero-image>img{
+    width: 433px;
+    height: 433px;
+
+    margin-left: 100px;
+}
+
+
+.galeria-section {
+    margin-top: 10vh;
+    height: 80vh;
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+    scroll-snap-stop: always; 
+}
+
+.galeria-section>h1 {
+    font-family: Inter;
+    font-size: 50px;
+    margin-left: 10vw;
+}
+
+.galeria-images {
+    width: 80vw;
+    margin: auto;
+    margin-top: 5vh;    
+    display: flex;
+    justify-content: space-between;
+    gap: 10vw
+}
+
+.galeria-item {
+    width: 20vw;
+    height: 40vh;
+    /* background-color: red; */
+    border-radius: 15px;
+
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+
+    border: 2px solid black;
+}
+
+.velemeny-section {
+    margin-top: 10vh;
+    height: 80vh;
+    padding-top: 30vh;
+    padding-bottom: 5vh;
+    scroll-snap-stop: always; 
+}
+
+.velemeny-section>h1 {
+    font-size: 50px;
+    font-family: Inter;
+    margin-left: 5vw;
+}
+
+.velemeny-items {
+    width: 90vw;
+    margin: auto;
+    margin-top: 5vh;    
+    display: flex;
+    justify-content: space-between;
+    gap: 10vw
+}
+
+.velemeny-item {
+    width: 25vw;
+    height: 20vh;
+    padding: 1vw;
+    /* background-color: red; */
+    border-radius: 15px;
+
+    font-size: 20px;
+    font-family: inter;
+    position: relative; 
+
+    border: 2px solid rgba(0, 0, 0, 0.09);
+}
+
+.velemenyiro {
+    font-family: Inter;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.5vw;
+    font-size: 15px;
+}
+
+
+.rolam-section {
+    margin-top: 10vh;
+    height: 90vh;
+    padding-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+    scroll-snap-stop: always; 
+}
+
+.rolam-text {
+    width: 50vw;
+    font-family: Inter;
+}
+
+.rolam-text>h1 {
+    font-size: 30px;
+}
+
+.rolam-text>p{
+    padding-top: 2vh;
+    font-size: 20px;
+}
+
+.rolam-image{
+    width: 30vw;
+}
+
+.rolam-resp {
+    display: none;
+}
+
+.rolam-image>img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.09);  
+    margin-top: 10vh;
+}
+
+.kapcsolat-section{
+    margin-top: 10vh;
+    height: 90vh;
+    width: 90vw;
+
+    display: flex;
+    justify-content: center;
+}
+
+.left-area {
+    margin-left: 20vw;
+    width: 30vw;
+    height: 100%;
+}
+
+.left-area>h1 {
+    font-size: 50px;
+    font-family: Inter;
+}
+
+.left-area>p {
+    margin-top: 2vh;
+    font-size: 20px;
+    font-family: Inter;
+}
+
+.social-container {
+    margin-bottom: 2vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-btn {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+.social-btn:hover {
+    cursor: pointer;
+}
+
+#facebook-btn{
+    background-image: url(facebook.png);
+}
+
+#instagram-btn{
+    background-image: url(instagram.png);
+}
+
+.right-area{
+    width: 30vw;
+    position: relative;
+}
+
+.right-area>h1 {
+    font-size: 50px;
+    font-family: Inter;
+}
+
+#name-input {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+}
+#email-input {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    margin-top: 4vh;
+}
+
+#message-input {
+    width: 100%;
+    height: 200px;
+    font-family: Inter;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    margin-top: 4vh;
+    padding: 5px;
+}
+
+#form-btn{
+    width: 200px;
+    height: 50px;
+    font-family: Inter;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    margin-top: 4vh;
+    padding: 5px;
+}
+
+#form-btn{
+    cursor: pointer;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .navigation-section{
+        gap: 0vw;
+    }
+    .Company-name {
+        width: 40vw;
+        margin-left: 0;
+    }
+
+    .navigation-items{
+        width: 60vw;
+        justify-content: space-evenly;
+    }
+
+    .nav-item{
+        width: 15vw;
+        font-size: 14px;
+    }
+
+    .hero-texts {
+        width: 30vw;
+    }
+
+    .hero-texts>h1 {
+        display: none;
+        font-size: 30px;
+    }
+
+    #heroh1{
+        display: block;
+        font-family: Inter;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 10vh;
+    }
+    .hero-texts>p {
+        font-size: 20px;
+        margin-top: 10vh;
+    }
+    .hero-texts>button {
+        width: 27.5vw;
+    }
+
+    .hero-image {
+        margin-top: 0;
+        padding-top: 5vh;
+        height: 45vh;
+    }
+
+    .hero-image>img {
+        margin-left: 0;
+        margin-top: 0vh;
+        height: 45vh;
+        width: 30vw;
+    }
+
+    .galeria-section {
+        margin-top: 0;
+        padding-top: 5vh;
+    }
+
+    .galeria-images {
+        flex-wrap: wrap;
+        justify-content: space-evenly;    
+    }
+
+    .galeria-item{
+        flex: 0 0 40%
+    }
+
+    .velemeny-section{
+        margin-top: 35vh;
+        padding-top: 15vh;
+    }
+
+    .velemeny-items {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .velemeny-item {
+        flex: 0 0 40%;
+        font-size: 15px;
+    }
+
+    .rolam-section {
+        margin-top: 20vh;
+        padding-top: 0vh;
+    }
+
+    .rolam-text>p {
+        font-size: 15px;
+    }
+
+    .left-area {
+        width: 40vw;
+        margin-left: 10vw;
+    }
+
+    .right-area{
+        width: 50vw;
+    }
+
+    .right-area>h1 {
+        font-size: 30px;
+    }
+
+    .left-area>h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-image {
+        width: 45vw;
+    }
+
+    .hero-image>img {
+        margin-left: 0;
+        margin-top: 0vh;
+        height: 45vh;
+        width: 45vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  .navigation-items {display: none;}
+  .hamburger-menu {
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    height: 36px;
+    font-size: 30px;
+  }
+  .Company-name {
+    width: 80vw;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .navigation-section{
+   gap: 10vw;
+   display: block; 
+  }
+}
+
+@media screen and (max-width: 385px){
+    .Company-name {
+        font-size: 25px;
+        text-align: left;
+        padding-left: 10px;
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .opened {
+        display: block;
+        width: 100vw;
+    }
+
+    .opened>.nav-item{
+        width: 100%;
+        height: 50px;
+    }
+
+    .opened>#kapcsolat-btn{
+        width: 50%;
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .hero-section {
+        margin-top: 0vh;
+        height: 30vh;
+        margin-bottom: 30vh ;
+    }
+
+    .hero-texts {
+        position: relative;
+        margin-top: 5vh;
+        width: 45vw;
+    }
+
+    #heroh1{
+        position:relative;
+        display: block;
+        margin: auto;
+        margin-top: 20vh;
+        width: 85vw;
+        height: 5vh;
+        font-size: 35px;
+        font-weight: 800;   
+        font-family: Inter;
+    }
+
+    .hero-texts>h1 {
+        display: none;
+    }
+
+    .hero-texts>p {
+        width: 100%;
+        text-align: left;
+        padding-left: 5vw;
+        font-size: 20px;
+    }
+
+    .hero-texts>#hero-kapcsolat-btn {
+        width: 40vw;
+        margin-left: 5%;
+        font-size: 20px;
+    }
+
+    .hero-image{
+        width: 45vw;
+    }
+
+    .hero-image>img{
+        width: 60vw;
+        height: 40vh;
+        margin-left: 0;
+        margin-top: 20vh;
+    }
+}
+
+
+@media screen and (max-width: 385px) {
+    #heroh1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .hero-texts>p {
+        margin-top: 0px;
+        padding-top: 0px;
+        font-size: 19px;
+    }
+
+    .hero-texts>#hero-kapcsolat-btn {
+        width: 50vw;
+        margin-left: 5%;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #heroh1 {
+        font-size: 25px;
+    }
+
+    .hero-texts>p {
+        font-size: 15px;
+    }
+
+    .hero-image>img {
+        height: 30vh;
+        margin-top: 10vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .galeria-images {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .galeria-item {
+        flex: 0 0 70%;
+    }
+
+    .velemeny-section>h1 {
+        font-size: 25px;
+    }
+    .velemeny-item{
+        font-size: 17.5px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .velemeny-item{
+        font-size: 15px;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .velemeny-section{
+        margin-top: 85vh;
+        padding-top: 10vh;
+    }
+
+    .velemeny-items {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .velemeny-item {
+        flex: 0 0 70%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .rolam-section {
+        padding-top: 70vh;
+        margin-top: 40vh;
+    }
+
+    .rolam-text {
+        width: 90vw;
+    }
+
+    .rolam-image {
+        display: none;
+    }
+
+    .rolam-resp {
+        display: block;
+        width: 100%;
+    }
+
+    .rolam-resp>img {
+        width: 50vw;
+        border-radius: 15px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .rolam-section {
+        padding-top: 40vh;
+        margin-top: 15vh;
+    }
+
+    .rolam-text>p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .kapcsolat-section {
+        margin-top: 80vh; 
+        padding-top: 10vh;
+        display: block;
+    }
+
+    .left-area {
+        width: 80vw;
+        margin: auto;
+        height: 50%;
+    }
+
+    .left-area>h1 {
+        font-size: 30px;
+    }
+
+    #arrow {
+        display: none;
+    }
+
+    .right-area {
+        padding-top: 0vh;
+        width: 80vw;
+        margin: auto;
+        padding-bottom: 5vh;
+    }
+
+    .right-area>h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .kapcsolat-section {
+        margin-top: 40vh; 
+        padding-top: 10vh;
+        display: block;
+    }
+}

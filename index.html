@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Panna photos, fotós weboldal.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph (Facebook, Messenger, stb.) -->
+    <meta property="og:title" content="Panna Photos">
+    <meta property="og:description" content="Panna photos, fotós weboldal.">
+    <meta property="og:url" content="https://sajat-oldal.netlify.app">
+    <meta property="og:type" content="website">
+    <title>Panna Photos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        
+        <section id="navigation-section" class="navigation-section">
+
+            <div class="Company-name" id="Company-name">
+                    Panna Photos
+            </div>
+
+            <div class="hamburger-menu">
+                    <i class="fa fa-bars" onclick="displayDropdownMenu()"></i>
+            </div>
+
+            <div class="navigation-items" id="navigation-items">
+                <div class="nav-item" id="galeria-btn">Galéria</div>
+                <div class="nav-item" id="velemeny-btn">Vélemények</div>
+                <div class="nav-item" id="rolam-btn">Rólam</div>
+                <div class="nav-item" id="kapcsolat-btn">Kapcsolat</div>
+            </div>
+
+            
+
+        </section>
+
+        <h1 id="heroh1">Te vagy a fókuszban!</h1>   
+        <section id="hero-section" class="hero-section">
+            <div class="hero-texts">
+                <h1>Te vagy a fókuszban!</h1> 
+                <p>Legyen szó üzleti portréról, vagy kreatív fotózásról, <br> megmutatom, ki vagy igazán!</p>
+                <button id="hero-kapcsolat-btn">Kapcsolat felvétel</button>
+            </div>
+
+            <div class="hero-image">
+                <img src="pannawithcamera.png">
+            </div>
+
+        </section>
+
+
+
+        <section id="galeria-section" class="galeria-section">
+            <h1>Galéria:</h1>
+            <div class="galeria-images">
+                <div class="galeria-item" id="galeria-item1"></div>
+                <div class="galeria-item" id="galeria-item2"></div>
+                <div class="galeria-item" id="galeria-item3"></div>
+            </div>
+        </section>
+
+
+
+        <section id="velemeny-section" class="velemeny-section">
+            <h1> Vélemények:</h1>
+            <div class="velemeny-items">
+                <div class="velemeny-item">
+                    "Nagyszerű fotózás volt! Rövid idő alatt készítette el a képeket, amelyek hibátlanok voltak." 
+                    <br><span class="velemenyiro">Hegedüs Dávid</span>
+                </div>
+                <div class="velemeny-item">
+                    "Nagyszerű fotózás volt! Rövid idő alatt készítette el a képeket, amelyek hibátlanok voltak." 
+                    <br><span class="velemenyiro">Hegedüs Dávid</span>
+                </div>
+                <div class="velemeny-item">
+                    "Nagyszerű fotózás volt! Rövid idő alatt készítette el a képeket, amelyek hibátlanok voltak." 
+                    <br><span class="velemenyiro">Hegedüs Dávid</span>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="rolam-section" class="rolam-section">
+            <div class="rolam-text">
+                <h1>Rólam:</h1>
+                <div class="rolam-resp">
+                    <img src="panna.png">
+                </div>
+                <p>Szia!  Panna vagyok, amatőr fotós.
+                <br><br> Gyerekkorom óta lenyűgöz a természet szépsége és az emberek sokszínűsége, ezért a fényképezőgép lett a legjobb barátom.
+                <br><br>Leginkább a természetfotózás áll hozzám közel – szeretek elkapni egy pillanatot, amikor a napfény megcsillan egy levélen, vagy amikor egy madár szárnyra kap. Emellett portrékat is készítek, mert hiszem, hogy minden embernek van egy története, amit egyetlen kép is képes elmesélni.
+                <br><br>A fotózás számomra nem csak hobbi, hanem egyfajta kaland is: minden kép egy új felfedezés. Remélem, hogy a képeim által mások is észreveszik a világ apró csodáit.
+                <br><br>Köszönöm, hogy benéztél az oldalamra – örömmel osztom meg veled a világot, ahogyan én látom!</p>
+            </div>
+            <div class="rolam-image">
+                <img src="panna.png">
+            </div>
+        </section>
+
+
+
+        <section id="kapcsolat-section" class="kapcsolat-section">
+            <div class="left-area">
+                <h1>Lépj kapcsolatba:</h1>
+                <p>Közösségi médián keresztül:</p>
+                <div class="social-container">
+                    <div class="social-btn" id="facebook-btn">&nbsp;</div>
+                    <div class="social-btn" id="instagram-btn"></div>
+                </div>
+                <p>Vagy űrlapon keresztül: <span id="arrow">→</span></p>
+            </div>
+            <div class="right-area">
+                <h1>Űrlap:</h1>
+                <form id="contactForm">
+                  <input name="name" placeholder="Név" required id="name-input"><br>
+                  <input name="email" type="email" placeholder="Email" required id="email-input"><br>
+                  <textarea name="message" placeholder="Üzenet" required id="message-input"></textarea>
+                  <button type="submit" id="form-btn">Küldés</button>
+                </form>
+            </div>
+        </section>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
